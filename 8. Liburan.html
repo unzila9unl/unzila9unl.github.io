@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>project</title>
+    <link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+
+<body>
+    <SCRIPT>
+
+
+    </SCRIPT> 
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-icon">&#9776;</label>
+    
+     <div class="menu">
+
+         <ul class="utama">
+            <li><a href="13.%20beranda.html">Beranda</a></li>
+            
+            
+            <li>Tips 
+                <ul class="sub">
+                <li><a href="satu.html">Anak Rantau</a></li>
+                <li><a href="dua.html">cara Hemat Uang</a></li>
+                <li><a href="tiga.html">Mengenal tipe kebribadian</a></li>
+                </ul>  
+            </li>
+            
+            <li>Kegiatanku 
+                <ul class="sub">
+                <li><a href="8.%20Liburan.html">Liburan</a></li>
+                <li><a href="9.%20kampus.html">Kampus</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="10.%20profil.html">Profil</a></li>
+            <li>Kontak
+                <ul class="sub">
+                <li><a href="12.%20kontak.html">Gmail</a></li>
+                    <li><a href="https://www.instagram.com/unzila9unl/">Instagram</a></li>
+                </ul></li>
+         </ul>
+    <div id="header">
+        <div class="nama">Unzila's Site</div><br><br>
+    </div>
+    
+    <div id="mutama">
+             
+        <div id="sideleft">
+       
+        <div id="jamTampil" class="jamStyle"></div>
+        <script type="text/javascript" language="javascript">
+        function updateWaktu()
+        {
+            var waktu=new Date();
+            var j=waktu.getHours();
+            var m=waktu.getMinutes();
+            var d=waktu.getSeconds();
+            if(j>=12)
+                {
+                    j=j-12;
+                    ketWaktu="PM";
+                }
+            else
+                {
+                    ketWaktu="AM";
+                }
+            if(j<10)
+                {
+                    j="0"+j;
+                }
+            if(m<10)
+                {
+                    m="0"+m;
+                }
+            if(d<10)
+                {
+                    d="0"+d;
+                    document.getElementById('jamTampil').style.backgroundColor="darkblue";
+                }
+            else
+                {
+                    document.getElementById('jamTampil').style.backgroundColor="seagreen";
+                }
+
+            if(m==30)
+                {
+                    window.alert("Sudah 30 menit anda melihat web saya");
+                }
+            else
+                {
+
+                }
+            var jamku=document.getElementById('jamTampil');
+            jamku.textContent=j+":"+m+":"+d+":"+ketWaktu;
+            setTimeout('updateWaktu()',1000);
+        }
+            updateWaktu();
+        </script><br><br><br><br>    
+        <img style="border:1px dashed blue; height: 60%; width: 100%; " src="pribadi.jpg"/>
+        </div>
+     
+   <div class="main">
+           <br> 
+      <center><img style="border:3px green; height: 45%; width: 60%; " src="sepeda.jpg"/></center><br><font size="5" color="green">Kegiatanku selama liburan yaitu bersepeda, bermain bersama adik dan teman-teman, juga mengikuti kegiatan komunitas</font>
+    </div>
+             
+    <div id="sideright">
+      <h1><font size="3" color="yellow">isi Form yuk</font></h1>
+        <font size="4"><a href="11.%20formulir.html">Formulir pengunjung</a></font>  
+    </div>
+        
+    </div>
+    
+    <div id="komentar">
+    <table style="align: center; background-color: #ffffcc; border:10px; border-radius:0% 0% 0% 0%; width=30%; height=400px">
+        <tr><font color="#ffcc66">Komentar</font></tr>
+        <tr>
+            <td><textarea name="komentar" cols="25" rows="4"></textarea></td>
+        </tr>
+        
+        <tr>
+            <td>
+                <form method="get"><input style="background-color: #ffcc66;color: aliceblue;font-family:DFPOP1-W9" type="submit" value="SEND"/></form>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body{background-color:rgb(148, 98, 163);
+    margin: 0px;
+    font-family: verdana,georgia,serif;
+    font-size: 14px;
+    opacity: 1;}
+
+#header{background-image:url(../Images/str.jpg);
+        margin: 10px;
+        padding: 20px;
+        height: 150px;
+        border-radius: 5px;
+}
+
+.nama{
+        text-align:right;
+        color: rgb(255, 251, 4);
+        text-decoration-skip: objects;
+        text-shadow:4px 4px 8px red;
+        font-family: comic sans ms sans-serif;
+        font-size: 90px;}
+.nama:hover{
+        text-align:right;
+        color: rgb(255, 255, 255);
+        text-decoration-skip: objects;
+        text-shadow:4px 4px 8px red;
+        font-family: comic sans ms sans-serif;
+        font-size: 90px;}
+
+ul, li{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;}
+
+ ul.utama li{
+      display: inline-block;
+      width: 220px;
+      height: 40px;
+      background:#010e83;
+      text-align: center;
+        color: rgb(239, 243, 3);}
+    
+ ul li:hover{background: #ec3251; color: yellow;}
+    
+ ul.utama a{
+       color: rgb(255, 238, 0);
+       text-decoration: none;
+       line-height: 30px;
+ }
+ ul.sub{display: none;}
+    
+ ul.utama li:hover ul.sub{
+  display: block;
+  position: absolute;}
+
+ul.sub li{
+  display: block;
+  margin-top: 1px;}
+
+ul.sub2{display:none;}
+
+ul.sub2 li {display: block;}
+    
+ul.utama ul.sub li:hover 
+ul.sub2{
+    display: block; 
+    position: absolute; 
+    top:40px;
+    left: 213px;
+    visibility: visible;}  
+
+.menu{width: 100%;height: 50px;background: #010e83;position: absolute;top: 5px;z-index: -1;
+transition: all .6s ease-in-out;
+-webkit-transition: all .6s ease-in-out;
+-moz-transition: all .6s ease-in-out;
+-o-transition: all .6s ease-in-out;
+-ms-transition: all .6s ease-in-out;}
+
+.menu-icon{display:none;float: right;padding: 10px 20px;background: #E5DAC0;color: #C3AAGF;cursor: pointer;border-radius: 5px;margin: 5px 5px 0 0}
+#menuToggle{display: none}
+.menu{position: absolute;top: 5px;}
+
+
+#mutama{
+    width:100%;
+    background-color: white;}
+
+#sideleft{background-color: rgba(225, 245, 245, 0.6);
+    font-size: 10px;
+    padding: 20px;
+    border-radius: 0px 10px 10px 10px;
+    width: 25%;
+    height: 400px;
+    float: left;
+}
+  .jamStyle
+            {   position: absolute;
+                width: 170px; 
+                background-color:#faf836;
+                height: 40px;
+                border: 2px solid #54ea78;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 20px;
+                line-height: 40px;
+                font-family: algerian;
+                color: #fffefb;
+                float:right;
+                text-shadow: 0px 9px 8px rgba(226,235,91,0.4);
+                -webkit-transition: all 2.5s ease-in-out; 
+                -moz-transition: all 2.5s ease-in-out; 
+                -ms-transition: all 2.5s ease-in-out; 
+                -o-transition: all 2.5s ease-in-out; 
+                transition: all 2.5s ease-in-out; }
+
+.main{background-color: floralwhite;
+    
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 30px;
+    font-size: 110%;
+    width: 45%;
+    float: left;}
+
+#sideright{background-color: rgba(225, 245, 245, 0.6);
+    font-size: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 15%;
+    height: 400px;
+    float: right;
+    clear: right;
+    top: 50px;}
+
+#komentar{
+    position: relative;
+    clear: both;}
+
+
+@media screen and (max-width:480px){
+.menu-icon{display:block;float: right;padding: 10px 20px;background:black; color: aqua; cursor: pointer; margin: 5px 10px 0px 0px;border-radius: 5px;}
+#menuToggle{display: none}
+#menuToggle:checked ~ .menu{position: absolute;top: 51px; text-align: center;}
+        
+        
+.header{width:auto;height: auto;margin: auto;border-bottom: 1px solid blue;background-color: palegreen;}
+nav li{display: block}
+menu {background: aqua}
+nav a{display: block;padding: 0px;border-bottom: 1px solid #CAB47F}
+nav a:hover{border-radius: 0px;}
+.menu{top: -350px;height: auto;    opacity: 0.8;filter: Alpha(opacity=80);}
+    p::first-letter{font-size:100px;}
+
+	
+.main{
+	width:100%;
+    padding:0;
+	margin:0;
+	}
+    
+#sideleft{
+	width:100%;
+    height: 80%;
+    padding:0;
+	margin:0;
+}
+	
+	
+#sideright{
+	width:100%;
+	padding:0;
+	margin:0;
+
+}
